@@ -1,3 +1,7 @@
+//Lucia Amatriain- legajo: 93456/8
+//Sofia Rottolli- legajo: 94732/6
+//video explicativo: https://youtu.be/pUNFUPajV7w
+
 //variables globales
 let pantalla;
 let imagenes = [];
