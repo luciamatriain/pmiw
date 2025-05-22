@@ -1,0 +1,334 @@
+/* Settings generales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #FFFDE9;
+  color: #000;
+}
+
+/* Tipografía*/
+h1 {
+  font-size: 3.90rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 580;
+  line-height: 100%;  
+
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 450;
+  line-height: 1.3;
+}
+
+.resaltado{
+  color: #3FB6E5;
+}
+
+/* Contenedores de elementos ----------------------------------------------------------------------------------------------*/
+.seccion-portada{
+  width: 100%;
+  height: 150vh;
+  position: relative;
+  background-color: #FFFDE9;
+  overflow: hidden;
+  padding: 4em 0;
+
+  background-image: 
+    url("img/mockup.png"),
+    url("img/header.png"),
+    url("img/hongo1.png");
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  background-position: 
+    right calc(100% + 1.5625rem), 
+    top,             
+    left calc(100% + 9.375rem);  
+
+  background-size: 
+    50vw,
+    100vw,
+    23vw;
+}
+
+.seccion-cta{
+  width: 100%;
+  height: 140vh;
+  position: relative;
+  background-color: #FFFDE9;
+  overflow: hidden;
+  padding: 4em 0;
+
+  background-image: 
+  url(img/hongo2.png);
+
+  background-repeat: no-repeat;
+
+  background-position: right calc(150px);
+
+  background-size: 
+  65vh;
+}
+
+.seccion-carrusel{
+  width: 100%;
+  height: 170vh;
+  position: relative;
+  z-index:0 ;
+  background-color: #FFFDE9;
+  overflow: hidden;
+  padding: 4em 0;
+}
+
+.seccion-cards{
+  width: 100%;
+  height: 290vh;
+  position: relative;
+  background-color: #FFFDE9;
+  overflow: hidden;
+  padding: 4em 0;
+
+  background-image: 
+    url("img/hongo3.png"),
+    url("img/gradiente1.png");
+
+  background-repeat: no-repeat, no-repeat;
+
+  background-position: 
+  top right,
+  bottom;
+
+  background-size: 
+  35vw,
+  100vw;
+}
+
+.seccion-form{
+  width: 100%;
+  height: 290vh;
+  position: relative;
+  background-color: #FFFDE9;
+  overflow: hidden;
+  padding: 4em 0;
+
+  background-image: 
+  url(img/hongo4.png),
+  url(img/gradiente2.png),
+  url(img/hongo5.png);
+
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  background-position: 
+  right,
+  bottom,
+  bottom left;
+
+  background-size:
+  100vh,
+  100vw,
+  20vw;
+}
+
+.contenido {
+  width: 73%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Contenedores por seccion ----------------------------------------------------------------------------------------------*/
+/*PORTADA*/
+.contenido-portada h1 {
+  font-size: 4.2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 550;
+  line-height: 100%;
+  margin-top: 10%;
+}
+
+.contenido-portada p{
+  margin-top: 15px;
+}
+
+/*CTA------------------------------------------------------*/
+
+.titulo-cta p{
+  margin-top: 20px;
+}
+
+.contenedor-cta {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.card-cta {
+  background-color: #FFFDE9;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #EF5B24;
+  width: 15rem;
+  height: 18rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.card-cta img {
+  width: 7.5em;
+  height: auto;
+}
+
+.card-cta p {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: left;
+}
+
+
+#titulo-cta{
+  position: relative;
+  display: inline-block;
+  font-size: 4.2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 550;
+  line-height: 100%;
+}
+
+#resaltado1{
+  position: relative;
+  z-index: 1;
+}
+
+#resaltado1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.1em;
+  width: 100%;
+  height: 0.4em; 
+  background-color: #3FB6E5;
+  z-index: -1;
+}
+
+/*CARRUSEL------------------------------------------------------*/
+#titulo-carrusel{
+  padding-top: 10%;
+  position: relative;
+  font-size: 4.2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 570;
+  line-height: 90%;
+}
+
+#resaltado2{
+  width: 100%;
+  height: 0.4em; 
+  color: #FFE556;
+  position: absolute;
+  z-index: -1;
+}
+
+.video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.video-fondo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carrusel-bootstrap {
+  position: relative;
+  z-index: 2; 
+  margin-top: 4rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.carrusel-bootstrap .carousel-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+}
+
+/*CARDS------------------------------------------------------*/
+#titulo-cards{
+  font-size: 4.2rem;
+  font-family: 'Crimson Text', serif;
+  font-weight: 590;
+  line-height: 90%;
+  margin-top: 5%;
+}
+
+#sub-cards{
+  font-size: 3.7rem;
+  font-weight: 550;
+  line-height: 100%;
+  color:#FFFDE9; 
+  margin-top: 40%;
+
+}
+
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;      /* espacio columnas */
+  row-gap: 0.5rem;         /* espacio filas */
+  margin-top: 20vh;
+  /*position: relative;
+  z-index: 2;*/
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  width: 95%;
+  height: auto;
+  display: block;
+}
+
+/* img especificas */
+.item-1 {
+  transform: translateY(-10px);
+}
+
+.item-2 {
+  transform: translateY(60px);
+}
+
+.item-3 {
+  transform: translateY(-30px);
+}
+
+.item-4 {
+  transform: translateY(25px);
+}
